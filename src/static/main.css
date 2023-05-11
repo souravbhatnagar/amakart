@@ -1,0 +1,87 @@
+/* reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set body background color and font */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* style the inventory table */
+table.inventory {
+    border-collapse: collapse;
+    margin: 20px;
+    width: 100%;
+}
+
+table.inventory td,
+table.inventory th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table.inventory th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* style the add inventory form */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 300px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+form button[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+/* style flash messages */
+.flash {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card-deck mb-3 text-center">
+  <div class="card mb-4 box-shadow">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Products</h4>
+    </div>
+    <div class="card-body">
+      <a class="btn btn-lg btn-block btn-primary" href="{{ url_for('products.products') }}">Manage</a>
+      <p class="card-title pricing-card-title">Manage Products</p>
+    </div>
+  </div>
+  <div class="card mb-4 box-shadow">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Locations</h4>
+    </div>
+    <div class="card-body">
+      <a class="btn btn-lg btn-block btn-primary" href="{{ url_for('locations.locations') }}">Manage</a>
+      <p class="card-title pricing-card-title">Manage Warehouse Locations</p>
+    </div>
+  </div>
+  <div class="card mb-4 box-shadow">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Movements</h4>
+    </div>
+    <div class="card-body">
+      <a class="btn btn-lg btn-block btn-outline-primary"
+        href="{{ url_for('product_movements.product_movements') }}">Get
+        Started</a>
+      <p class="card-title pricing-card-title">Manage Product Movements from Warehouse to Warehouse</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}
